@@ -162,7 +162,7 @@ book_j ={ title:"Voiture droit devant",
 
 
 
-books=[book_a]
+books=[book_a,book_b,book_c,book_d,book_e,book_f,book_g,book_h,book_i,book_j]
 books.each do |attributes|
   book = Book.create!(attributes)
   puts "Created #{book.title} #{book.id}"
