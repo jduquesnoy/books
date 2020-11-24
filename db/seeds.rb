@@ -37,7 +37,25 @@ end
 puts "Finished!"
 
 
-book_a={title:"", description:"",user_id:"",author:"",collection:"",editor:"",type:"",isbn:"",state:"",wish:"",deposit:""}
+book_a ={ title:"le lezard", 
+          description:"le lezard est un reptile pouvant prendre plusieurs formes",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Lee Zard",
+          collection:"Sang Froid",
+          editor:"betes sauvages",
+          type:"SF",isbn:"1234567891234",
+          state:"good",
+          wish: true,
+          deposit:true
+        }
+books=[book_a]
+books.each do |attributes|
+  book = Book.create!(attributes)
+  puts "Created #{book.title}"
+end
+puts "Finished!"
+        
+  
  
 
 
