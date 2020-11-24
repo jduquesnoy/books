@@ -37,8 +37,10 @@ end
 puts "Finished!"
 
 
+book_a={title:"", description:"",user_id:"",author:"",collection:"",editor:"",type:"",isbn:"",state:"",wish:"",deposit:""}
+ 
 
-  
+
 # Message.destroy_all
 # User.destroy_all
 # Channel.destroy_all

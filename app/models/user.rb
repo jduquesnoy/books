@@ -6,5 +6,4 @@ class User < ApplicationRecord
   has_many :books
   validates :username, presence: true, length: { minimum: 3 }, uniqueness: true
   validates :first_name, uniqueness: { scope: :last_name }
-  # attr_accessor :first_name, :last_name, :username
 end
