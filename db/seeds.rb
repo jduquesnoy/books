@@ -49,6 +49,119 @@ book_a ={ title:"le lezard",
           wish: true,
           deposit:true
         }
+book_b ={ title:"le dindon", 
+          description:"le dindon est un oiseau qui ne vole pas et qui a disparu",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Ding Dong",
+          collection:"la deplumée",
+          editor:"betes sauvages",
+          genre:"science",
+          isbn:"1234567891235",
+          state:"very good",
+          wish: true,
+          deposit:true
+         }
+book_c ={ title:"le Puma", 
+          description:"le puma ne peut parler de lui même que par lui même",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Alain Delon",
+          collection:"Gros Melon",
+          editor:"Cherche Midi",
+          genre:"roman",
+          isbn:"1234567891236",
+          state:"very good",
+          wish: true,
+          deposit:true
+        }
+book_d ={ title:"les cornes musent", 
+        description:"quand les cornes musents ca s'entend",
+        user_id: User.find_by(username:"jndps").id,
+        author:"Alain Vache",
+        collection:"Grosjean",
+        editor:"Scolar",
+        genre:"roman",
+        isbn:"1234567891237",
+        state:"bad",
+        wish: true,
+        deposit:true
+      }
+
+book_e ={ title:"Karaté Kid", 
+          description:"Larusso doit combattre les mechants Kobra Kaï",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Camille Combat",
+          collection:"Fureur de vivre",
+          editor:"Cherche Midi",
+          genre:"roman",
+          isbn:"1234567891238",
+          state:"very good",
+          wish: true,
+          deposit:true
+        }
+book_f ={ title:"ET l'intraterrestre", 
+          description:"ET téléphone 5G",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Thierry Joueurdelamontagne",
+          collection:"wahou",
+          editor:"amblin",
+          genre:"sf",
+          isbn:"1234567891239",
+          state:"bad",
+          wish: true,
+          deposit:true
+        }
+book_g ={ title:"Karaté Kid", 
+          description:"Larusso doit combattre les mechants Kobra Kaï",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Camille Combat",
+          collection:"Fureur de vivre",
+          editor:"Cherche Midi",
+          genre:"roman",
+          isbn:"1234567891238",
+          state:"very good",
+          wish: true,
+          deposit:true
+        }
+book_h ={ title:"ET l'intraterrestre", 
+          description:"ET téléphone 5G",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Thierry Joueurdelamontagne",
+          collection:"wahou",
+          editor:"amblin",
+          genre:"sf",
+          isbn:"1234567891239",
+          state:"bad",
+          wish: true,
+          deposit:true
+        }
+book_i ={ title:"Mbappe l'homme de la situation", 
+          description:"les plus beau but de l'histoire du football sont là",
+          user_id: User.find_by(username:"jndps").id,
+          author:"jérémie Sivan",
+          collection:"Sueur froide",
+          editor:"Panini",
+          genre:"sport",
+          isbn:"1234567891240",
+          state:"very good",
+          wish: true,
+          deposit:true
+        }
+book_j ={ title:"Voiture droit devant", 
+          description:"les plus beau moment de la F1 télécommandé",
+          user_id: User.find_by(username:"jndps").id,
+          author:"Pils Neuv",
+          collection:"bling bling",
+          editor:"volant",
+          genre:"sport",
+          isbn:"1234567891241",
+          state:"bad",
+          wish: true,
+          deposit:true
+        }
+
+
+
+
 books=[book_a]
 books.each do |attributes|
   book = Book.create!(attributes)
