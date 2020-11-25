@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_book, only: [:show, :edit, :update, :destroy]
+  before_action :set_book, only: %i[show edit update destroy]
   def index
     @books_wish = Book.all.where(wish: true)
     @books_deposit = Book.all.where(deposit: true)
@@ -38,7 +38,7 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :genre, :description, :author,:collection, :editor, :isbn,:state, :deposit, :wish)
+    params.require(:book).permit(:title, :genre, :description, :author,:collection, :editor, :isbn,:state, :deposit, :wish,)
   end
 
   def set_book
