@@ -10,12 +10,18 @@
 <p><%= @book.state %></p>
 <p><%= @book.wish %></p>
 
-<ul>
-  <li><%= link_to "Delete #{@book.title}",
-                    book_path(@book),
-                    method: :delete,
-                    data: { confirm: "Are you sure?" } %> </li>
-  <li><%= link_to 'Back to all books', books_path %> </li>
-  <li><%= link_to "update #{@book.title}", edit_book_path(@book) %> </li>
 
+<ul>
+ 
+  <li><%= link_to 'Back to all books', books_path %> </li>
+
+<% if policy(Book).destroy? %>
+  <li><%= link_to "Delete #{@book.title}",
+                  book_path(@book),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %> </li>
+<% end %>
+<% if policy(Book).edit? %>
+  <li><%= link_to "update #{@book.title}", edit_book_path(@book) %> </li>
+<% end %>
 </ul>

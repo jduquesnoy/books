@@ -1,20 +1,23 @@
 class BooksController < ApplicationController
   before_action :set_book, only: %i[show edit update destroy]
   def index
-    @books_wish = Book.all.where(wish: true)
-    @books_deposit = Book.all.where(deposit: true)
+    @books = policy_scope(Book)
+    # @books_wish = Book.all.where(wish: true)
+    # @books_deposit = Book.all.where(deposit: true)
   end
 
   def show
   end
 
   def new
-    @book = Book.new #need to instantiate the form
+    @book = Book.new
+    authorize @book
   end
 
   def create
     @book = Book.new(book_params)
     @book.user = current_user
+    authorize @book
     if @book.save
       redirect_to book_path(@book), notice: 'cool'
     else
@@ -43,5 +46,6 @@ class BooksController < ApplicationController
 
   def set_book
     @book = Book.find(params[:id])
+    authorize @book
   end
 end
