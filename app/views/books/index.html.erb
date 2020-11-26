@@ -2,7 +2,10 @@
 <p>Find me in app/views/books/index.html.erb</p>
 <ul>
   <% @books.each do |book| %>
-    <li><h4><%= link_to book.title, book_path(book) %></h4></li>
+    <li>
+      <h4><%= link_to book.title, book_path(book) %></h4>
+      <%= image_tag "#{book.image}" %>
+    </li>
   <% end %>
 </ul>
 <% if policy(Book).create? %>

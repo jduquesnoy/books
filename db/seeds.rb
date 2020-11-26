@@ -50,7 +50,8 @@ readers.each do |reader|
             isbn:"1234567891234",
             state:"good",
             wish: rand_a,
-            deposit: !rand_a
+            deposit: !rand_a,
+            image:"le-lezard.png"
           }
 
   rand_b = [true,false].sample
@@ -64,7 +65,8 @@ readers.each do |reader|
             isbn:"1234567891235",
             state:"very good",
             wish: rand_b,
-            deposit: !rand_b
+            deposit: !rand_a,
+            image:"le-dindon.png"
           }
 
   rand_c = [true,false].sample         
@@ -78,7 +80,8 @@ readers.each do |reader|
             isbn:"1234567891236",
             state:"very good",
             wish: rand_c,
-            deposit: !rand_c
+            deposit: !rand_a,
+            image:"le puma.png"
           }
 
   rand_d = [true,false].sample         
@@ -92,7 +95,8 @@ readers.each do |reader|
             isbn:"1234567891237",
             state:"bad",
             wish: rand_d,
-            deposit: !rand_d
+            deposit: !rand_a,
+            image:"les cornes musent.png"
           }
 
   rand_e = [true,false].sample
@@ -106,7 +110,8 @@ readers.each do |reader|
             isbn:"1234567891238",
             state:"very good",
             wish: rand_e,
-            deposit: !rand_e
+            deposit: !rand_a,
+            image:"karate kid.png"
           }
 
   rand_f = [true,false].sample
@@ -120,7 +125,8 @@ readers.each do |reader|
             isbn:"1234567891239",
             state:"bad",
             wish: rand_f,
-            deposit: !rand_f
+            deposit: !rand_a,
+            image:"ET.png"
           }
 
   rand_g = [true,false].sample
@@ -134,7 +140,8 @@ readers.each do |reader|
             isbn:"1234567891240",
             state:"very good",
             wish: rand_g,
-            deposit: !rand_g
+            deposit: !rand_a,
+            image:"le clown est la.png"
           }
 
   rand_h = [true,false].sample
@@ -148,7 +155,8 @@ readers.each do |reader|
             isbn:"1234567891241",
             state:"bad",
             wish: rand_h,
-            deposit: !rand_h
+            deposit: !rand_a,
+            image:"la nuit.png"
           }
 
   rand_i = [true,false].sample
@@ -162,7 +170,8 @@ readers.each do |reader|
             isbn:"1234567891242",
             state:"very good",
             wish: rand_i,
-            deposit: !rand_i
+            deposit: !rand_a,
+            image:"mbappe.png"
           }
 
   rand_j = [true,false].sample
@@ -176,7 +185,8 @@ readers.each do |reader|
             isbn:"1234567891243",
             state:"bad",
             wish: rand_j,
-            deposit: !rand_j
+            deposit: !rand_a,
+            image:"voiture droit devant.png"
           }
 
 
