@@ -163,7 +163,7 @@ readers.each do |reader|
   book_i ={ title:"Mbappe l'homme de la situation", 
             description:"les plus beau but de l'histoire du football sont là",
             user_id: reader.id,
-            author:"jérémie Sivan",
+            author:"Jérémie Sivan",
             collection:"Sueur froide",
             editor:"Panini",
             genre:"sport",
@@ -176,7 +176,7 @@ readers.each do |reader|
 
   rand_j = [true,false].sample
   book_j ={ title:"Voiture droit devant", 
-            description:"les plus beau moment de la F1 télécommandé",
+            description:"les plus beau moment de la F1 télécommandée",
             user_id: reader.id,
             author:"Pils Neuv",
             collection:"bling bling",
